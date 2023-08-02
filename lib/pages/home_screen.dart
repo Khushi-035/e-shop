@@ -16,118 +16,68 @@ class _HomeScreenState extends State<HomeScreen> {
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(statusBarColor: Colors.black),
     );
-    
-    return Drawer(
-      child: ListView(
-        children: <Widget>[
-          // _buildUserAccountsDrawerHeader(),
-          ListTile(
-            textColor: Colors.amberAccent,
-            onTap: () {
+    return Scaffold(
+
+      // appBar: Column(
+      //   children: [
+      //     AppBar(
+      //       leading: Padding(
+      //         padding: const EdgeInsets.only(left: 8, top: 8),
               
-            },
             
-            title: Text("Home"),
-          ),
-          ListTile(
-            textColor: Colors.amberAccent,
-            onTap: () {
-              
-              
-            },
             
-            title: Text("Checkout"),
-          ),
-          ListTile(
-            textColor: Colors.amberAccent,
-            onTap: () {
-              
-              
-                  
-            },
+            // child: Container(
             
-            title: Text("About"),
-          ),
-          ListTile(
-            // selected: profileColor,
-            textColor: Colors.amberAccent,
-            onTap: () {
-              
-              
-            },
+            // padding: EdgeInsets.only(top: 50, left: 20, right: 20),
+          body: Container(
+            padding: EdgeInsets.only(top: 50, left: 20, right: 20),
+            child: Column(
+              children: [
+            Row(
+              children: [
+                Card(
+                  child: SizedBox(
+                    
+                    width: 150,
+                    height: 100,
+                    child: Center(child: Text('Elevated Card')),
+                  ),
+                ),
+                Card(
+                child: SizedBox(
+                width: 150,
+                height: 100,
+                child: Center(child: Text('Elevated Card')),
+              ),
+            ),
+              ],
+            ),
+            Row(
+              children: [
+                Card(
+                  child: SizedBox(
+                    width: 150,
+                    height: 100,
+                    child: Center(child: Text('Elevated Card')),
+                  ),
+                ),
+                Card(
+              child: SizedBox(
+                width: 150,
+                height: 100,
+                child: Center(child: Text('Elevated Card')),
+              ),
+            ),
+              ],
+            ),
             
-            title: Text("Profile"),
+            
+            
+            
+              ],
+            ),
           ),
-          
-        ],
-      ),
-    );
+            );
+            
   }
-    
-  }
-
-
-
-//       appBar: Column(
-//         children: [
-//           AppBar(
-//             leading: Padding(
-//               padding: const EdgeInsets.only(left: 8, top: 8),
-              
-            
-            
-//             child: Container(
-            
-//             padding: EdgeInsets.only(top: 50, left: 20, right: 20),
-//             child: Column(
-//             children: [
-//           Row(
-//             children: [
-//               Card(
-//                 child: SizedBox(
-//                   width: 150,
-//                   height: 100,
-//                   child: Center(child: Text('Elevated Card')),
-//                 ),
-//               ),
-//               Card(
-//               child: SizedBox(
-//               width: 150,
-//               height: 100,
-//               child: Center(child: Text('Elevated Card')),
-//             ),
-//           ),
-//             ],
-//           ),
-//           Row(
-//             children: [
-//               Card(
-//                 child: SizedBox(
-//                   width: 150,
-//                   height: 100,
-//                   child: Center(child: Text('Elevated Card')),
-//                 ),
-//               ),
-//               Card(
-//             child: SizedBox(
-//               width: 150,
-//               height: 100,
-//               child: Center(child: Text('Elevated Card')),
-//             ),
-//           ),
-//             ],
-//           ),
-          
-          
-          
-          
-//             ],
-//           ),
-//             ),
-//             ),),
-//         ],
-//       ),
-      
-//     );
-//   }
-// }
+}

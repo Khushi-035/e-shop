@@ -1,10 +1,8 @@
-import 'package:e_shop/pages/login_page.dart';
 import 'package:e_shop/controllers/auth_controller.dart';
 import 'package:e_shop/pages/signup_screen.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:get/get.dart';
+
 
 
 class LoginScreen extends StatefulWidget {
@@ -43,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
             Container(
               margin:
                   const EdgeInsets.symmetric(horizontal: 10,),
-              // padding: const EdgeInsets.all(19),
+             
               
               
               child: Column(
@@ -99,7 +97,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   const SizedBox(
-                  height: 220,
+                  height: 160,
                 ), 
 
                   
@@ -115,8 +113,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         shadowColor: Colors.greenAccent,
                         elevation: 3,
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(32.0)),
-                        minimumSize: Size(100, 40), //////// HERE
+                            borderRadius: BorderRadius.circular(64.0)),
+                        minimumSize: Size(190, 40), 
                       ),
                       
                       child: Text('Login'),
@@ -131,17 +129,17 @@ class _LoginScreenState extends State<LoginScreen> {
                           const TextSpan(
                             
                             text: "New here ?",
-                            style: TextStyle(fontWeight: FontWeight.w700,
+                            style: TextStyle(fontFamily: 'Poppins-Bold',fontWeight: FontWeight.bold,
                             color: Colors.black
                             ),
                             
                             ),
                           TextSpan(
                               text: "Signup",
-                              style: const TextStyle(decoration: TextDecoration.underline, fontWeight: FontWeight.w700,color: Color(0xff0C54BE),),
+                              style: const TextStyle(fontFamily: 'Poppins-Bold', fontWeight: FontWeight.bold,color: Color(0xff0C54BE),),
                               recognizer: TapGestureRecognizer()..onTap = () {
                                 Navigator.push(context, MaterialPageRoute(builder: (_)=> SignUpScreen()));
-                                // Get.to(LoginScreen());
+                                
                               
                               }
                           ),

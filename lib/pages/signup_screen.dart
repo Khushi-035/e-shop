@@ -2,8 +2,7 @@ import 'package:e_shop/controllers/auth_controller.dart';
 import 'package:e_shop/pages/login_page.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:get/get.dart';
+
 
 
 class SignUpScreen extends StatefulWidget {
@@ -114,7 +113,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                   ),
                   const SizedBox(
-                  height: 180,
+                  height: 120,
                 ), 
 
                   
@@ -136,7 +135,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         elevation: 3,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(32.0)),
-                        minimumSize: Size(100, 40),
+                        minimumSize: Size(190, 40),
                       ),
                       
                       child: Text('Signup'),
@@ -151,17 +150,18 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           const TextSpan(
                             
                             text: "Already have an account ?",
-                            style: TextStyle(fontWeight: FontWeight.w700,
+                            style: TextStyle(fontFamily: 'Poppins-Bold',
+                      fontWeight: FontWeight.bold,
                             color: Colors.black
                             ),
                             
                             ),
                           TextSpan(
                               text: "Login",
-                              style: const TextStyle(decoration: TextDecoration.underline, fontWeight: FontWeight.w700,color: Color(0xff0C54BE),),
+                              style: const TextStyle(fontFamily: 'Poppins-Bold', fontWeight: FontWeight.bold,color: Color(0xff0C54BE),),
                               recognizer: TapGestureRecognizer()..onTap = () {
                                 Navigator.push(context, MaterialPageRoute(builder: (_)=> LoginScreen()));
-                                // Get.to(LoginScreen());
+                                
                               
                               }
                           ),

@@ -1,6 +1,7 @@
 import 'package:e_shop/controllers/auth_controller.dart';
 import 'package:e_shop/pages/home_screen.dart';
 import 'package:e_shop/pages/login_page.dart';
+import 'package:e_shop/pages/signup_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'E-Shop',
-      home: HomeScreen(),
+      home: LoginScreen(),
     );
   }
 } 
