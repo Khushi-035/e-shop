@@ -17,6 +17,24 @@ class _HomeScreenState extends State<HomeScreen> {
       const SystemUiOverlayStyle(statusBarColor: Colors.black),
     );
     return Scaffold(
+      appBar: PreferredSize(
+          preferredSize: Size.fromHeight(90.0), // here the desired height
+          child: AppBar(
+        title: Padding(
+          padding: const EdgeInsets.only(top: 20),
+          child: const Text('e-shop',
+          
+          style: TextStyle(
+                        
+                        fontFamily: 'Poppins-Bold',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 35,
+                        color: Color(0xffF5F9FD),
+                      
+                      ),),
+        ),
+          ),
+      ),
 
       // appBar: Column(
       //   children: [
